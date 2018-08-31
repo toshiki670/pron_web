@@ -3,10 +3,10 @@ LABEL maintainer 'Toshiki Kawazoe <toshiki.k.000@gmail.com>'
 
 # set environment variables
 ENV LANG C.UTF-8
-ENV APP_ROOT /appname
+ENV APP_ROOT /myapp
 
 # install essential libraries
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
+RUN apt-get update -qq && apt-get install -y build-essential mysql-client libpq-dev
 
 # install node.js
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
