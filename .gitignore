@@ -50,8 +50,11 @@ bower.json
 # Ignore node_modules
 node_modules/
 
-# Ignore MySQL passwprd
+# Ignore password file
 /docker-compose.yml
+
+# Ignore mysql volumes
+/mysql/volumes/
 
 
 # End of https://www.gitignore.io/api/rails
